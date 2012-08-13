@@ -1,7 +1,8 @@
 (ns leiningen.protobuf
   (:use [clojure.string :only [join]]
         [leiningen.javac :only [javac]]
-        [leiningen.core.user :only [leiningen-home]])
+        [leiningen.core.user :only [leiningen-home]]
+        [leiningen.core.eval :only [eval-in-project]])
   (:require [clojure.java.io :as io]
             [fs.core :as fs]
             [fs.compression :as fs-zip]
